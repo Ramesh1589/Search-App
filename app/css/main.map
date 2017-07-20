@@ -1,0 +1,38 @@
+{
+	"version": 3,
+	"file": "../scss/main.css",
+	"sources": [
+		"../scss/main.scss",
+		"../scss/base/_variables.scss",
+		"../scss/base/_mixins.scss",
+		"../scss/base/_normalize.scss",
+		"../scss/base/_base.scss",
+		"../scss/modules/_typography.scss",
+		"../scss/modules/_blocks.scss",
+		"../scss/modules/_buttons.scss",
+		"../scss/modules/_sections.scss",
+		"../scss/modules/_components.scss",
+		"../scss/modules/_panels.scss",
+		"../scss/layouts/_nav.scss",
+		"../scss/layouts/_header.scss",
+		"../scss/layouts/_footer.scss"
+	],
+	"sourcesContent": [
+		"/*\r\n  Search Engine\r\n  Author: Ramesh Rathod\r\n  Version:0.0.1\r\n\r\n*/\r\n/* BASE - Base styles, variables, mixins, etc..*/\r\n\r\n    @import 'base/_variables.scss';\r\n    @import 'base/_mixins.scss';\r\n    @import 'base/_normalize.scss';\r\n    @import 'base/_base.scss';\r\n\r\n/* MODULES - Individual site components */\r\n\r\n  @import 'modules/_typography.scss';\r\n  @import 'modules/_blocks.scss';\r\n  @import 'modules/_buttons.scss';\r\n  @import 'modules/_sections.scss';\r\n  @import 'modules/_components.scss';\r\n  @import 'modules/_panels.scss';\r\n\r\n/* Layouts  - Pagelayout style*/\r\n\r\n @import 'layouts/_nav.scss';\r\n @import 'layouts/_header.scss';\r\n @import 'layouts/_footer.scss';\r\n",
+		"/* Font Colors */\r\n\r\n$base-font-size:15px;\r\n$base-font-family:\"Segoe UI\",\"Segoe WP\",\"Segoe Regular\",sans-serif;\r\n$base-font-color:#666666;\r\n\r\n/*Base Background Color*/\r\n\r\n $primary-color:#00aff0;\r\n $secondary-color:#7fba00;\r\n $light-color:#e4eef2;\r\n $dark-color:#333333;\r\n",
+		"/* Mixin */\r\n\r\n@mixin border-radius($radius) {\r\n  -moz-border-radius:$radius;\r\n  -webkit-border-radius:$radius;\r\n  border-radius: $radius;\r\n}\r\n\r\n@mixin add-border($size, $color, $position)  {\r\n     @if $position == 'all'{\r\n       border: $size solid $color;\r\n     } @else if $position == 'top'{\r\n        border-top: $size solid $color;\r\n      } @else if $position == 'bottom: '{\r\n        border-bottom: $size solid $color;\r\n      } @else if $position == 'right'{\r\n        border-right: $size solid $color;\r\n      } @else if $position == 'left'{\r\n        border-left: $size solid $color;\r\n     } @else if $position == 'top-bottom'{\r\n       border-top: $size solid $color;\r\n       border-bottom: $size solid $color;\r\n     } @else if $position == 'right-left'{\r\n       border-right: $size solid $color;\r\n       border-left: $size solid $color;\r\n     }\r\n}\r\n",
+		"h1,h2,h3,h4,h5 {\r\n  margin-top: 0px;\r\n}\r\n.page-header{\r\n  margin-top: 30px;\r\n}\r\n",
+		"body{\r\n     font-family: $base-font-family;\r\n     font-size: $base-font-size;\r\n     line-height: 1.7em;\r\n     color: $base-font-color;\r\n}\r\na{\r\n  color: $primary-color;\r\n}\r\n\r\nul,li{\r\n   list-style: none;\r\n}\r\n\r\ninput,textarea,button{\r\n  @include border-radius(0px);\r\n}\r\n",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"",
+		"/* Nav Bar*/\r\n\r\n.navbar{\r\n    width: 80%;\r\n    margin: auto;\r\n    @include add-border (1px, #e7e7e7, 'right-left') ;\r\n    @include add-border (3px, #e8491d, 'bottom') ;\r\n    border-color: #e7e7e7;\r\n    min-height: 60px;\r\n    margin-bottom: 30px;\r\n\r\n    background: #fff;\r\n\r\n    a{\r\n      color: $primary-color;\r\n      font-size: 20px;\r\n      letter-spacing: 0.5px;\r\n      padding-bottom: 24px;\r\n      padding-top: 20px;\r\n    }\r\n}\r\n\r\n.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {\r\nbackground-color: $primary-color;\r\ncolor: #fff;\r\n}\r\n",
+		"",
+		""
+	],
+	"mappings": "AAAA;;;;;EAKE;AACF,iDAAiD;ACNjD,iBAAiB;AAMjB,yBAAyB;ACNzB,WAAW;;ACAX,AAAA,EAAE,EAAC,AAAA,EAAE,EAAC,AAAA,EAAE,EAAC,AAAA,EAAE,EAAC,AAAA,EAAE,CAAC;EACb,UAAU,EAAE,GAAI;CACjB;;;AACD,AAAA,YAAY,CAAA;EACV,UAAU,EAAE,IAAK;CAClB;;;ACLD,AAAA,IAAI,CAAA;EACC,WAAW,EHEE,UAAU,EAAC,UAAU,EAAC,eAAe,EAAC,UAAU;EGD7D,SAAS,EHAE,IAAI;EGCf,WAAW,EAAE,KAAM;EACnB,KAAK,EHAO,OAAO;CGCvB;;;AACD,AAAA,CAAC,CAAA;EACC,KAAK,EHCS,OAAO;CGAtB;;;AAED,AAAA,EAAE,EAAC,AAAA,EAAE,CAAA;EACF,UAAU,EAAE,IAAK;CACnB;;;AAED,AAAA,KAAK,EAAC,AAAA,QAAQ,EAAC,AAAA,MAAM,CAAA;EFXnB,kBAAkB,EEYK,GAAG;EFX1B,qBAAqB,EEWE,GAAG;EFV1B,aAAa,EEUU,GAAG;CAC3B;;AJHD,0CAA0C;AAS1C,gCAAgC;AWtBhC,YAAY;;AAEZ,AAAA,OAAO,CAAA;EACH,KAAK,EAAE,GAAI;EACX,MAAM,EAAE,IAAK;ETmBV,YAAY,ESlBM,GAAG,CTkBD,KAAK,CSlBF,OAAO;ETmB9B,WAAW,ESnBO,GAAG,CTmBF,KAAK,CSnBD,OAAO;EAEjC,YAAY,EAAE,OAAQ;EACtB,UAAU,EAAE,IAAK;EACjB,aAAa,EAAE,IAAK;EAEpB,UAAU,EAAE,IAAK;CASpB;;;AAlBD,AAWI,OAXG,CAWH,CAAC,CAAA;EACC,KAAK,EVNK,OAAO;EUOjB,SAAS,EAAE,IAAK;EAChB,cAAc,EAAE,KAAM;EACtB,cAAc,EAAE,IAAK;EACrB,WAAW,EAAE,IAAK;CACnB;;;AAGL,AAAoC,eAArB,CAAC,WAAW,GAAG,EAAE,GAAG,CAAC,AAAA,MAAM,EAAE,AAAoC,eAArB,CAAC,WAAW,GAAG,EAAE,GAAG,CAAC,AAAA,MAAM,CAAC;EACvF,gBAAgB,EVfA,OAAO;EUgBvB,KAAK,EAAE,IAAK;CACX",
+	"names": []
+}

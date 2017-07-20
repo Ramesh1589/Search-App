@@ -1,0 +1,104 @@
+<p></br></p>
+<p></br></p>
+<p></br></p>
+
+<div class="container">
+    <form class=" well well-md clearfix">
+        <div clas="row">
+            <div class="col-md-4">
+                <h4><span class="label label-warning">AKOLA</span></h4>
+            </div>
+            <div class="col-md-8">
+                <input type="text" style="width: 80%" placeholder="Search..." class="form-control" ng-model="search">
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <!-- Side Menu Bar Start -->
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        <h4>Categories</h4></div>
+                </div>
+                <div class="panel-body">
+                    <div class="nav nav-pills nav-stacked">
+                        <li><a ui-sref=".panshop" ui-sref-active="active"><h4>Pan Shop</h4></a></li>
+                        <li><a ui-sref=".cake"><h4>Cakes & Icecream </h4></a></li>
+                        <li><a ui-sref=".dryfruits"><h4>Dry Fruits</h4></a></li>
+                        <li><a ui-sref=".juicecenter"><h4>Juice Center</h4></a></li>
+                        <li><a ui-sref=".fastfood"><h4>Fast Food</h4></a></li>
+                        <li><a ui-sref=".winesshop"><h4>Wines Shop</h4></a></li>
+                        <li><a ui-sref=".pizzacorners"><h4>Pizza Corner's</h4></a></li>
+                        <li><a ui-sref=".sweetshop"><h4>Sweet Shop</h4></a></li>
+                        <li><a ui-sref=".familyrestaurant"><h4>Family Restaurant</h4></a></li>
+                        <li><a ui-sref=".cofeeshop"><h4>Cofee's Shop</h4></a></li>
+                        <li><a ui-sref=".restaurant_bar"><h4>Restaurant & Bar</h4></a></li>
+                        <li><a ui-sref=".banquethall"><h4>Banquet Hall</h4></a></li>
+                        <li><a ui-sref=".birthdayhall"><h4>Birthday Hall</h4></a></li>
+                        <li><a ui-sref=".lawns&gardens"><h4>Lawn's & Garden's</h4></a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ui-view>
+            <div class="col-md-9">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="panel-title">Restaurant</div>
+                    </div>
+                    <div class="panel panel-body">
+                        <div ng-controller="panshopCtrl">
+                            <div dir-paginate=" pn in panshop | filter:search | itemsPerPage: 3">
+                                <div class="thumbnail">
+                                    <h4 ng-model="title">{{ pn.title }}</h4>
+                                    <p>
+                                        <br>
+                                    </p>
+                                    <p><strong>Name:</strong>{{ pn.title }}</p>
+                                    <p><strong>Description:</strong>{{ pn.description }}</p>
+                                    <p><strong>Address:</strong>{{ pn.address }}</p>
+                                    <hr>
+                                    <div class="clearfix">
+                                        <button type="button" class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#info" ng-click="getDetails(pn)">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-md-8 col-lg-offset-4">
+                                <dir-pagination-controls max-size="3" direction-links="true" boundary-links="true"></dir-pagination-controls>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="info" role="dialog">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">{{detail.title}}</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img ng-src="app/images/jobs/{{detail.image}}.jpg" class="img-responsive" width="570px" height="300px" alt="">
+                        <div class="caption">
+                            <h3></h3>
+                            <p><strong>Description:</strong>{{detail.description }}</p>
+                            <p><strong>Address:</strong>{{ detail.address}}</p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--End of Modal-->
+    </div>

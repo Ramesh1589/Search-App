@@ -1,0 +1,93 @@
+<div class="row">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">Tourism </h3>
+        </div>
+        <div class="panel-body">
+
+            <div class="col-md-4" dir-paginate="tm in tourism|filter:search | itemsPerPage: 6">
+
+                <div class="grid">
+                    <figure class="my_effect">
+                        <img ng-src="app/images/tourism/{{tm.image}}.jpg " class=" image-responsive " width="100%" />
+                        <figcaption>
+
+                            <h4 ng-model="name"><span>{{tm.name }}<span></h4>
+                            <p><strong>Address:</strong>{{tm.address }}</p>
+
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="clearfix">
+                    <button type="button" class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#info" ng-click="getDetails(tm)">More Info</button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-md-4 col-lg-offset-4">
+                    <dir-pagination-controls max-size="6" direction-links="true" boundary-links="true"></dir-pagination-controls>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<!--
+<div class="row">
+  <div class="col-md-4">
+    <div class="col-md-12">
+                <div class = "thumbnail">
+                     <img ng-src="app/images/crib-2.jpg"></img>
+                  </div>
+              </div>
+              <div class="col-md-12">
+                <div class="col-md-8 ">
+                    <h4 ng-model="address">Anand Restaurant</h4>
+                  </div>
+                  <div class="col-md-4">
+                    <button type="button" class="btn btn-info btn-xs" >View Details</button>
+                  </div>
+              </div>
+  </div>
+  <div class="col-md-4">
+    <div class="col-md-12">
+                <div class = "thumbnail">
+                     <img ng-src="app/images/crib-2.jpg"></img>
+                  </div>
+              </div>
+              <div class="col-md-12">
+                <div class="col-md-8 ">
+                    <h4 ng-model="address">Anand Restaurant</h4>
+                  </div>
+                  <div class="col-md-4">
+                    <button type="button" class="btn btn-info btn-xs">View Details</button>
+                  </div>
+              </div>
+  </div>
+  <div class="col-md-4">
+    <div class="col-md-12">
+                <div class = "thumbnail">
+                     <img ng-src="app/images/crib-2.jpg"></img>
+                  </div>
+              </div>
+              <div class="col-md-12">
+                <div class="col-md-8 ">
+                    <h4 ng-model="address">Anand Restaurant</h4>
+                  </div>
+                  <div class="col-md-4">
+                    <button type="button" class="btn btn-info btn-xs">View Details</button>
+                  </div>
+              </div>
+    </div>
+</div> -->

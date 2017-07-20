@@ -1,0 +1,101 @@
+<p></br></p>
+<p></br></p>
+<p></br></p>
+
+<div class="container">
+
+    <form class=" well well-md clearfix">
+        <div clas="row">
+            <div class="col-md-4">
+                <h4><span class="label label-warning">AKOLA</span></h4>
+            </div>
+            <div class="col-md-8">
+                <input type="text" style="width: 80%" placeholder="Search..." class="form-control" ng-model="search">
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <!-- Side Menu Bar Start -->
+        <div class="col-md-3">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <div class="panel-title">Categories</div>
+                </div>
+                <div class="panel-body">
+                    <div class="nav nav-pills nav-stacked">
+
+
+                        <li><a ui-sref=".engineeringjob" ui-sref-active="active">Enginnering Jobs</a></li>
+                        <li><a ui-sref=".civiljob">Civil Job</a></li>
+                        <li><a ui-sref=".teacherjob">Teacher Job</a></li>
+                        <li><a ui-sref=".bpojobs">BPO/KPO</a></li>
+                        <li><a ui-sref=".marketingjobs">Marketing Jobs</a></li>
+                        <li><a ui-sref=".deliveryboy">Delivery Boy</a></li>
+                        <li><a ui-sref=".housekeeping">House Keeping</a></li>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div ui-view>
+            <div class="col-md-9">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="panel-title">Jobs&nbsp;({{jobs.length}})</div>
+                    </div>
+                    <div class="panel panel-body">
+
+                        <div class="col-sm-12" dir-paginate="jb in jobs | filter:search | itemsPerPage: 3">
+                            <div class="thumbnail">
+                                <h4 ng-model="title">{{ jb.title }}</h4>
+                                <p><strong>Designation:</strong>{{ jb.designation }}</p>
+                                <p><strong>Skills:</strong>{{ jb.skills }}</p>
+                                <p><strong>Address:</strong>{{ jb.address }}</p>
+                                <hr>
+                                <div class="clearfix">
+                                    <button type="button" class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#info" ng-click="getDetails(jb)">More Info and Apply </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-md-8 col-lg-offset-4">
+                                <dir-pagination-controls max-size="3" direction-links="true" boundary-links="true"></dir-pagination-controls>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="info" role="dialog">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">{{detail.title}}</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img ng-src="app/images/jobs/{{detail.image}}.jpg" class="img-responsive" width="570px" height="300px" alt="">
+                        <div class="caption">
+
+                            <p><strong>Designation:</strong>&nbsp;<small>{{ detail.designation}}</small></p>
+                            <p><strong>Skills:</strong>&nbsp;{{ detail.skills}}</p>
+                            <p><strong>Description:</strong>&nbsp;{{detail.description }}</p>
+                            <p><strong>Address:</strong>&nbsp;{{ detail.address}}</p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--End of Modal-->
+    </div>
+</div>

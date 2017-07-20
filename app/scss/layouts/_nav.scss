@@ -1,0 +1,77 @@
+/*Navbar */
+
+.navbar{
+
+   width: auto;
+   border-color:$primary-color;
+   height: 60px;
+   background: $primary-color !important;
+   border-bottom: #e8491d 4px solid !important;
+	 padding-right: 20px;
+	 padding-left: 20px;
+   margin: auto;
+
+  a{
+		font-weight: bold;
+    color: #eceff1 !important;
+   text-transform: uppercase;
+   text-decoration: none;
+   font-size: 14px;
+   letter-spacing: 0.8px;
+
+   padding-top: 20px !important;
+ }
+
+
+
+}
+
+
+ .navbar-inverse .navbar-nav > li > a:hover,
+ .navbar-inverse .navbar-nav > li > a:focus ,
+ .navbar-inverse .navbar-nav > .active > a:hover,
+ .navbar-inverse .navbar-nav > .active > a:focus{
+
+ 	background-color: #234154 !important;
+ 	color:#e8491d !important;
+
+}
+.navbar-collapse,
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,{
+  background: #234154 !important;
+  color:#e8491d !important;
+
+
+}
+
+.navbar-brand h4 {
+  font-weight: bold;
+  font-size: 25px !important;
+  padding-left: 10px;
+  line-height: 1.1;
+  margin-top: -5px;
+
+  }
+
+  .highlights{
+    color: #e8491d !important;
+  }
+
+//toggle button
+
+//nav bar toggle
+
+.navbar-toggle{
+  background-color: #e8491d !important;
+}
+.navbar-toggle:hover{
+  background-color:#2B5464 !important;
+}
+
+.navbar-toggle{
+  border-color: #e8491d !important;
+}
+.icon-bar :hover {
+    background-color: #e8491d  !important;
+}

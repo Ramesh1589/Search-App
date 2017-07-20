@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html ng-app="myApp">
+
+<head>
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- MainCSS -->
+    <link rel="stylesheet" href="app/css/main.css">
+    <!-- Bootstrap And Jquery Dependency -->
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Angular Js Dependencies -->
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <!--    Pagination Dependencies-->
+    <script type="text/javascript" src="bower_components/angularUtils-pagination/dirPagination.js"></script>
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+</head>
+
+<body>
+    <div ng-include="'app/templates/header2.html'"></div>
+    <div ui-view>
+        <div ng-include="'app/templates/main.html'"></div>
+    </div>
+
+    <script src="app/app.js"></script>
+
+    <script src="app/home/home.js"></script>
+    <script src="app/home/home-controller.js"></script>
+    <script src="app/home/home-service.js"></script>
+
+    <script src="app/realestate/realestate.js"></script>
+    <script src="app/realestate/realestate-service.js"></script>
+    <script src="app/realestate/realestate-controller.js"></script>
+
+    <script src="app/hospital/hospital.js"></script>
+    <script src="app/hospital/hospital-service.js"></script>
+    <script src="app/hospital/hospital-controller.js"></script>
+
+    <script src="app/restaurant/restaurant.js"></script>
+    <script src="app/restaurant/restaurant-service.js"></script>
+    <script src="app/restaurant/restaurant-controller.js"></script>
+
+    <script src="app/jobs/jobs.js"></script>
+    <script src="app/jobs/jobs-service.js"></script>
+    <script src="app/jobs/jobs-controller.js"></script>
+
+    <script src="app/movie/movie.js"></script>
+    <script src="app/movie/movie-service.js"></script>
+    <script src="app/movie/movie-controller.js"></script>
+
+    <script src="app/tourism/tourism.js"></script>
+    <script src="app/tourism/tourism-service.js"></script>
+    <script src="app/tourism/tourism-controller.js"></script>
+
+    <!--login features-->
+    <script src="app/register/register.js"></script>
+    <script src="app/register/register-controller.js"></script>
+    <!--login features-->
+    <script src="app/login/login.js"></script>
+    <script src="app/login/login-controller.js"></script>
+    <!--End of login-->
+
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+
+        <form name="register" novalidate>
+            <h2 style="text-align: center; margin-right: 150px">Registration</h2>
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputText" class="control-label col-xs-2">First Name:</label>
+
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" placeholder="Enter First Name" ng-minlength="6" name="firstName" ng- model-options="{updateOn:'blur'}" ng-model="userDetails.firstName" ng-required="true">
+                        <span style="color:red;">
+                        <div ng-show="register.firstName.$dirty">
+                             <p ng-show="register.firstName.$error.required">First Name Required.</p>
+                             <p ng-show="register.firstName.$error.minlength">Minimum 6 Characters Required.</p>
+                        </div>
+                     </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputText" class="control-label col-xs-2"> Last Name:</label>
+
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="EnterLast Name" name="lastName" ng-minlength="5" ng-model-options="{updateOn:'blur'}" ng-model="userDetails.lastName" ng-required="true">
+                        <span style="color:red;">
+                        <div ng-show="register.lastName.$dirty">
+                        <p ng-show="register.lastName.$error.required">Last Name Required.</p>
+                        </div>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="" class="control-label col-xs-2">Mobile No:</label>
+
+                    <div class="col-md-6">
+                        <input type="" class="form-control" placeholder="Enter Mobile Number" name="mobileNumber" ng-model-options="                {updateOn:'blur'}" ng-model="userDetails.mobileNumber" ng-minlength="10" ng-required="true">
+
+                        <span style="color:red;">
+                        <div ng-show="register.mobileNumber.$dirty">
+                        <p ng-show="register.mobileNumber.$error.required">Mobile Number Required.</p>
+                        <p ng-show="register.mobileNumber.$error.minlength">Enter  a valid 10 digit  Mobile number.</p>
+                        </div>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="control-label col-xs-2">User Name:</label>
+                    <div class="col-md-6">
+                        <input type="email" name="userName" ng-required="true" ng-minlength="5" class="form-control" placeholder="User Name" ng-model="userDetails.userName">
+
+                        <span style="color:red;">
+                        <div ng-show="register.userName.$dirty">
+                        <p ng-show="register.userName.$error.required">User Name Required.</p>
+                        <p ng-show="register.userName.$error.minlength">Minimum length is 5.</p>
+
+                        </div>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="control-label col-xs-2">Password:</label>
+                    <div class="col-md-6">
+                        <input type="password" name="password" ng-required="true" ng-minlength="8" ng-maxlength="12" class="form-control" placeholder="Enter Password" ng-model="userDetails.password">
+                        <span style="color:red;">
+                        <div ng-show="register.password.$dirty">
+                        <p ng-show="register.password.$error.required">Password Required.</p>
+                        <p ng-show="register.password.$error.minlength">Minimum length is 8.</p>
+                        <p ng-show="register.password.$error.maxlength">Maximum length is 12</p>
+                        </div>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-md-6">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" ng-model="userDetails.terms"> I Agree Terms</label>
+                        </div>
+                    </div>
+                </div>
+                <div class=" form-group ">
+                    <div class="col-sm-offset-2 col-md-6 ">
+                        <button type="button" class="btn btn-primary" ng-if="userDetails.firstName" ng-disabled="!userDetails.terms " ng-click="registerUser()">Register</button>
+
+
+                        <!--  <button  type="button" class="btn btn-primary" ng-disabled = "!userDetails.terms && register.firstname.$dirty &&
+                        register.firstname.$invalid ||register.lastname.$dirty &&
+                        register.lastname.$invalid || register.email.$dirty &&
+                        register.email.$invalid" ng-click="registerUser()">Submit</button>
+                        -->
+
+
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="col-md-2"></div>
+</div>

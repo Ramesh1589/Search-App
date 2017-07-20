@@ -1,0 +1,94 @@
+{"home":[
+              {
+                      
+                      "type":"condo",
+                      "price":1000,
+                      "address":"1245 Kothrud Pune",
+                   "description":"Excellent place ,really nice view",
+                   "image":"crib-2"
+              },
+
+                  {
+                      "type":"comercial",
+                      "price":1000,
+                      "address":"1245 Kothrud Pune",
+                   "description":"Excellent place ,really nice view",
+                   "image":"crib-2"
+
+              },
+
+                 
+              
+                  {
+                      "type":"Duplex",
+                      "price":1100,
+                      "address":"1245 Kothrud Pune",
+                      "description":"Excellent place ,really nice view",
+                      "image":"crib-2"
+              },
+               {
+                      "type":"condo",
+                      "price":1000,
+                      "address":"1245 Kothrud Pune",
+                   "description":"Excellent place ,really nice view",
+                   "image":"crib-2"
+              },
+
+                  {
+                      "type":"comercial",
+                      "price":1000,
+                      "address":"1245 Kothrud Pune",
+                   "description":"Excellent place ,really nice view",
+                   "image":"image1"
+              },
+
+                  {
+                      "type":"House",
+                      "price":1000,
+                      "address":"1245 Kothrud Pune",
+                   "description":"Excellent place ,really nice view",
+                   "image":"crib-4"
+              },
+                  {
+                      "type":"Godawoon",
+                      "price":1100,
+                      "address":"Bhosari chakan Pune",
+                      "description":"Excellent place ,really nice view",
+                      "image":"crib-4"
+              },
+
+             {
+                      "type":"Office",
+                      "price":1000,
+                      "address":"Warje ",
+                   "description":"Excellent place ,really nice view",
+                   "image":"scrib-5"
+              },
+
+                  {
+                      "type":"Flat",
+                      "price":1000,
+                      "address":"Paud Road",
+                   "description":"Excellent place ,really nice view",
+                   "image":"scrib-6"
+              },
+
+                  {
+                      "type":"Family",
+                      "price":1000,
+                      "address":"1245 Katraj Pune",
+                   "description":"Excellent place ,really nice view",
+                   "image":"scrib-6"
+              },
+                  {
+                      "type":"Tent House",
+                      "price":1100,
+                      "address":"Bhosari pune",
+                      "description":"Excellent place ,really nice view",
+                      "image":"scrib-6"
+              }
+
+
+
+  ]
+   } 

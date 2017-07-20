@@ -1,0 +1,120 @@
+<p></br></p>
+<p></br></p>
+<p></br></p>
+
+
+<div class="row" ng-controller="movie_showCtrl">
+    <div class="col-md-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">SHOW TIME&nbsp;{{ mov.title }}</div>
+            <div class="panel-body">
+                <div class="col-md-10">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <img ng-src="app/images/movie/{{mov.image}}.jpg" width="300px" hieght="400px" class=" image-responsive ">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 ng-model="title">Title:&nbsp;{{ mov.title }}</h4>
+                        <p><strong>Cast:</strong>&nbsp;{{mov.cast}}</p>
+                        <p><strong>Genre:</strong>&nbsp;{{mov.genre }}</p>
+                        <p><strong>Director:</strong>&nbsp;{{mov.director}}</p>
+                        <p><strong>Rating:</strong>&nbsp;</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">SEE VIDEO TRAILER</div>
+            <div class="panel-body">
+                <div class="col-md-10">
+                    <div youtube>
+                        </youtube>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">SHOW TIME</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h5>E Orbit Multiplex</h5><br>
+                        <button type="button" class="btn btn-info btn-lg">12.30 PM</button>
+                        <button type="button" class="btn btn-info btn-lg">6.30 PM</button>
+                        <button type="button" class="btn btn-info btn-lg">9.30 PM</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-10">
+                        <h5>Prabhat Cinema Hall</h5><br>
+                        <button type="button" class="btn btn-info btn-lg">12.30 PM</button>
+                        <button type="button" class="btn btn-info btn-lg">6.30 PM</button>
+                        <button type="button" class="btn btn-info btn-lg">9.30 PM</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-10">
+                        <h5>Big Cinema Rajesh</h5><br>
+                        <button type="button" class="btn btn-info btn-lg">12.30 PM</button>
+                        <button type="button" class="btn btn-info btn-lg">6.30 PM</button>
+                        <button type="button" class="btn btn-info btn-lg">9.30 PM</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">REVIEWS</div>
+            <div class="panel-body">
+                Be the first inthe review....
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">POST YOUR REVIEWS</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="form-group">
+                                <label for="text">Rating:</label>
+                                <input type="email" class="form-control" id="rating">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Name:</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Security Code:</label>
+                                <input type="text" class="form-control" id="code">
+                            </div>
+
+                            <button type="submit" class="btn btn-danger btn-lg">Submit</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

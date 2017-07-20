@@ -1,0 +1,76 @@
+<p></br></p>
+<p></br></p>
+<p></br></p>
+
+<div class="container">
+    <form class=" well well-md clearfix">
+        <div clas="row">
+            <div class="col-md-4">
+                <h4><span class="label label-warning">AKOLA</span></h4>
+            </div>
+            <div class="col-md-8">
+                <input type="text" style="width: 80%" placeholder="Search..." class="form-control" ng-model="  search">
+            </div>
+        </div>
+    </form>
+
+    <div class="row">
+        <!-- Main Panel-->
+        <div class="col-md-12">
+            <div class="panel panel-primary">
+
+                <div class="panel-heading">
+                    <h3 class="panel-title">Hospital&nbsp;({{hospital.length}}) </h3>
+                </div>
+
+                <div class="panel-body">
+                    <div class="col-md-4" dir-paginate="ht in hospital| filter:search | itemsPerPage: 6">
+                        <div class="grid">
+                            <figure class="my_effect">
+                                <img ng-src="app/images/{{ht.image}}.jpg" />
+                                <figcaption>
+                                    <h4 ng-model="address"><span>{{ ht.name }}<span></h4>
+                                    <p><strong>Address:</strong>{{ ht.address }}</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="clearfix">
+                            <button type="button" class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#info" ng-click="getDetails(ht)">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-offset-4">
+                            <dir-pagination-controls max-size="6" direction-links="true" boundary-links="true"></dir-pagination-controls>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="info" role="dialog">
+            <div class="modal-dialog ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">{{detail.name}}</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img ng-src="app/images/{{detail.image}}.jpg" class="img-responsive" width="570px" height="300px" alt="">
+                        <div class="caption">
+
+                            <p><strong>Type:</strong>{{ detail.type}}</p>
+                            <p><strong>Service:</strong>{{detail.services }}</p>
+                            <p><strong>Address:</strong>{{ detail.address}}</p>
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

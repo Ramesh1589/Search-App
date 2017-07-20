@@ -1,0 +1,39 @@
+/*  Panel CSS */
+
+.panel{
+  width: 95%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px !important;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px !important;
+  border-color: #234154 !important ;
+
+}
+
+
+.panel-heading,.panel-title{
+    background: #234154 !important ;
+    color:  #e8491d !important;
+    font-size: 18px !important;
+    font-weight: 700;
+    border-radius: 0px;
+    padding-left: 30px;
+    height: 60px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px !important;
+}
+.panel-body{
+    background: #fff !important  ;
+    order-radius: 0px;
+    width: 100%;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px !important;
+   height: auto;
+   margin-bottom: 0px !important;
+
+}

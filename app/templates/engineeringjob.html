@@ -1,0 +1,61 @@
+<div class="col-md-9">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title"> Engineering Jobs &nbsp;({{engineeringjobs.length}})</div>
+        </div>
+        <div class="panel panel-body" ng-controller="engineeringCtrl">
+
+
+            <div dir-paginate=" eng in engineeringjobs | filter:search | itemsPerPage: 3">
+
+                <div class="thumbnail">
+                    <h4 ng-model="title">{{ eng.title }}</h4>
+                    <p><strong>Designatiom:</strong>&nbsp;{{ eng.designation }}</p>
+                    <p><strong>Skill:</strong>&nbsp;{{ eng.skills }}</p>
+                    <p><strong>Salary:</strong>&nbsp;{{ eng.salary }}/-</p>
+                    <p><strong>Address:</strong>&nbsp;{{ eng.address }}</p><br/>
+                    <hr>
+                    <div class="clearfix">
+                        <button type="button" class="btn btn-info  btn-xs pull-right" data-toggle="modal" data-target="#info" ng-click="getDetails(eng)">More Info and Apply</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-md-8 col-lg-offset-4">
+                    <dir-pagination-controls max-size="3" direction-links="true" boundary-links="true"></dir-pagination-controls>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="info" role="dialog">
+
+        <div class="modal-dialog ">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">{{detail.name}}</h4>
+                </div>
+                <div class="modal-body">
+                    <img ng-src="app/images/{{detail.image}}.jpg" class="img-responsive" width="570px" height="300px" alt="">
+
+                    <div class="caption">
+                        <h3></h3>
+                        <p><strong>Type:</strong>{{ detail.type}}</p>
+                        <p><strong>Service:</strong>{{detail.services }}</p>
+                        <p><strong>Address:</strong>{{ detail.address}}</p>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End of Modal-->
+</div>

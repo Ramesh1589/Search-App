@@ -1,0 +1,75 @@
+{
+  "tourism" :
+         [
+              {
+                       "image":"tourist-3",
+                      "name":"Sidhhivinay Ganapati",
+                      "address":"1245 Kothrud Pune",
+                      "descriptiob":"Excellent place ,really nice view",
+                      "distance":"10 km from the pune"
+              },
+
+                  {
+                      "image":"tourist-3",
+                      "name":"Chatrashrungi Devi",
+                      "address":"1245 Kothrud Pune",
+                       "descriptiob":"Excellent place ,really nice view",
+                       "distance":"10 km from the pune"
+              },
+                {
+                       "image":"tourist-3",
+                      "name":"Sinhagad Port",
+
+                      "address":"Sinhagad Pune",
+                      "descriptiob":"Excellent place ,really nice view",
+                      "distance":"10 km from the pune"
+              },
+
+                  {
+                      "image":"tourist-3",
+                      "name":"Khadakawasala Damp",
+                      "address":" Kadakawasala Pune",
+                      "descriptiob":"Excellent place ,really nice view",
+                      "distance":"10 km from the pune"
+              },
+
+                  {
+
+                      "image":"tourist-4",
+                      "name":"IT Park",
+                      "address":"Pune",
+                      "descriptiob":"Excellent place ,really nice view",
+                      "distance":"10 km from the pune"
+              },
+               {
+                      "image":"tourist-4",
+                      "name":"Rajiv Gandhi Udyaan",
+                      "address":"Katraj Pune",
+                     "descriptiob":"Excellent place ,really nice view",
+                     "distance":"10 km from the pune"
+              },
+              {
+                      "image":"tourist-3",
+                      "name":"Magarpatta City",
+                      "address":"Hadapasar Pune",
+                      "descriptiob":"Excellent place ,really nice view",
+                      "distance":"10 km from the pune"
+              },
+
+              {
+                     "image":"tourist-4",
+                     "name":"Rajiv Gandhi Udyaan",
+                     "address":"Katraj Pune",
+                    "descriptiob":"Excellent place ,really nice view",
+                    "distance":"10 km from the pune"
+             },
+             {
+                     "image":"tourist-3",
+                     "name":"Magarpatta City",
+                     "address":"Hadapasar Pune",
+                     "descriptiob":"Excellent place ,really nice view",
+                     "distance":"10 km from the pune"
+             }
+
+
+  ] }

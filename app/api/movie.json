@@ -1,0 +1,74 @@
+
+{
+	"movie":
+	[
+	{
+      "title":"Dangal",
+      "cast":"Aamir Khan, Sanya Malhotra, Fatima Sana Shaikh",
+      "genre":"Drama",
+      "director":"Nitesh Tiwarir",
+      "image":"dangal"
+
+    },
+
+    {
+        "title":"Wajah Tum Ho",
+        "cast":"Sharman Joshi, Gurmeet Chaudhary, Rajneish Duggal, Sana Khan",
+        "genre":"Thriller",
+        "director":" Nihit Bhave",
+        "image":"wajah tum ho"
+
+      },
+      {
+          "title":"Befikre",
+          "cast":"Ranveer Singh, Vaani Kapoor",
+          "genre":"Thriller",
+          "director":" Nihit Bhave",
+          "image":"befikre"
+
+        },
+
+        {
+            "title":"Kahaani 2: Durga Rani Singh",
+            "cast":"Vidya Balan, Arjun Rampal, Jugal Hansraj",
+            "genre":"Drama",
+            "director":" Nihit Bhave",
+            "image":"kahani"
+
+          },
+          {
+              "title":"Aasra",
+              "cast":"Atul Kulkarni, Kishori Ballal, Sunil Pal, Sadanand Shetty and Ashok Samartha",
+              "genre":"Drama",
+              "director":" Reza Noorani",
+              "image":"dangal"
+
+            },
+            {
+                "title":"Dear Zindagi",
+                "cast":"Shah Rukh Khan, Alia Bhatt, Kunal Kapoor, Angad Bedi, Ali Zafar",
+                "genre":"Drama",
+                "director":"  Meena Iyer",
+                "image":"dear zindagi"
+
+              },
+              {
+                  "title":"Saansein: The Last Breath",
+                  "cast":"Sonarika Bhadoria, Rajniesh Duggall, Hiten Tejwani, Neetha Shetty",
+                  "genre":"Drama",
+                  "director":" Mihir Bhanage",
+                  "image":"saasein"
+
+                },
+                {
+                    "title":"Force 2",
+                    "cast":"John Abraham, Sonakshi Sinha, Tahir Raj Bhasin",
+                    "genre":"Drama",
+                    "director":" Mihir Bhanage",
+                    "image":"force2"
+
+                  }
+
+
+]
+}

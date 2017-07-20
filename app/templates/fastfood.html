@@ -1,0 +1,32 @@
+<div class="col-md-9">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">Fast Food&nbsp;({{fastfood.length}})</div>
+        </div>
+        <div class="panel panel-body" ng-controller="fastfoodCtrl">
+            <div dir-paginate="ff in fastfood | filter:search | itemsPerPage: 3">
+                <div class="thumbnail">
+                    <h4 ng-model="title">{{ ff.title }}</h4>
+                    <p>
+                        <br>
+                    </p>
+                    <p><strong>Description:</strong>&nbsp;<small>{{ ff.description }}</small></p>
+                    <p><strong>address:</strong>&nbsp;{{ ff.address }}</p>
+                    <p><strong>Ph.no:</strong>&nbsp;{{ ff.phno }}</p>
+                    <p><strong>websites:</strong>&nbsp;{{ ff.website }}</p>
+                    <hr>
+                    <div class="clearfix">
+                        <button type="button" class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#info" ng-click="getDetails(hk)">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-md-8 col-lg-offset-4">
+                    <dir-pagination-controls max-size="3" direction-links="true" boundary-links="true"></dir-pagination-controls>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

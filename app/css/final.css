@@ -1,0 +1,673 @@
+/*
+  Search Engine
+  Author: Ramesh Rathod
+  Version:0.0.1
+
+*/
+
+
+/* BASE - Base styles, variables, mixins, etc..*/
+
+
+/* Font Colors */
+
+
+/*Base Background Color*/
+
+
+/* Mixin */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-top: 0px;
+}
+
+.page-header {
+    margin-top: 30px;
+}
+
+hr {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid #e8491d !important;
+}
+
+.clearfix {
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+.btn {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.well {
+    margin-bottom: 30px;
+}
+
+body {
+    font-family: "Segoe UI", "Segoe WP", "Segoe Regular", sans-serif;
+    font-size: 15px;
+    line-height: 1.7em;
+    color: #666666;
+    background-color: #e4eef2 !important;
+}
+
+a {
+    color: #2b5464;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+input,
+textarea,
+button {
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+h5 {
+    margin-left: 30px;
+    font-size: 16px !important;
+    font-weight: bold;
+}
+
+.well-md {
+    min-height: 20px;
+    padding: 14px;
+    margin-bottom: 30px;
+    background-color: #234154 !important;
+    border: 1px solid #234154 !important;
+    margin-left: 25px;
+    border-radius: 0px !important;
+    background-image: linear-gradient(to bottom, #234154 0%, #234154 100%) !important;
+}
+
+.form-control {
+    display: block;
+    height: 40px !important;
+    padding: 7px 12px;
+    font-size: 16px !important;
+    line-height: 1.42857143 !important;
+    background-image: none;
+    border-radius: 0px !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+}
+
+.modal-content {
+    border-radius: 0px !important;
+}
+
+p {
+    color: #000 !important;
+}
+
+
+/* MODULES - Individual site components */
+
+
+/*  Panel CSS */
+
+.panel {
+    width: 95%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px !important;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px !important;
+    border-color: #234154 !important;
+}
+
+.panel-heading,
+.panel-title {
+    background: #234154 !important;
+    color: #e8491d !important;
+    font-size: 18px !important;
+    font-weight: 700;
+    border-radius: 0px;
+    padding-left: 30px;
+    height: 60px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px !important;
+}
+
+.panel-body {
+    background: #fff !important;
+    order-radius: 0px;
+    width: 100%;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px !important;
+    height: auto;
+    margin-bottom: 0px !important;
+}
+
+.panel-footer {
+    height: 80px;
+}
+
+
+/*.. Thumbnail CSS ..*/
+
+.thumbnail {
+    background-color: #fff !important;
+    margin-left: 50px;
+    margin-right: 50px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px !important;
+    padding: 0px !important;
+    display: block;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+}
+
+.thumbnail h4 {
+    padding-left: 30px;
+    font-weight: bold;
+    color: #e8491d !important;
+}
+
+.thumbnail p {
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.thumbnail #btn {
+    float: right;
+}
+
+
+/* Layouts  - Pagelayout style*/
+
+
+/*Navbar */
+
+.navbar {
+    width: auto;
+    border-color: #2b5464;
+    height: 60px;
+    background: #2b5464 !important;
+    border-bottom: #e8491d 4px solid !important;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: auto;
+}
+
+.navbar a {
+    font-weight: bold;
+    color: #eceff1 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    padding-top: 20px !important;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+{
+    background-color: #234154 !important;
+    color: #e8491d !important;
+}
+
+.navbar-collapse,
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover {
+    background: #234154 !important;
+    color: #e8491d !important;
+}
+
+.navbar-brand h4 {
+    font-weight: bold;
+    font-size: 25px !important;
+    padding-left: 10px;
+    line-height: 1.1;
+    margin-top: -5px;
+}
+
+.navbar-nav > li > .dropdown-menu {
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: #234154 !important;
+    color: #e8491d !important;
+}
+
+.highlights {
+    color: #e8491d !important;
+}
+
+.navbar-toggle {
+    background-color: #e8491d !important;
+}
+
+.navbar-toggle:hover {
+    background-color: #2B5464 !important;
+}
+
+.navbar-toggle {
+    border-color: #e8491d !important;
+}
+
+.icon-bar:hover {
+    background-color: #e8491d !important;
+}
+
+
+/*
+  Search Engine
+  Author: Ramesh Rathod
+  Version:0.0.1
+
+*/
+
+
+/* BASE - Base styles, variables, mixins, etc..*/
+
+
+/* Font Colors */
+
+
+/*Base Background Color*/
+
+
+/* Mixin */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-top: 0px;
+}
+
+.page-header {
+    margin-top: 30px;
+}
+
+hr {
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 2px solid #e8491d !important;
+}
+
+.clearfix {
+    margin-right: 20px;
+    padding-bottom: 20px;
+}
+
+.btn {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.well {
+    margin-bottom: 30px;
+}
+
+body {
+    font-family: "Segoe UI", "Segoe WP", "Segoe Regular", sans-serif;
+    font-size: 15px;
+    line-height: 1.7em;
+    color: #666666;
+    background-color: #e4eef2 !important;
+}
+
+a {
+    color: #2b5464;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+input,
+textarea,
+button {
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+h5 {
+    margin-left: 30px;
+    font-size: 16px !important;
+    font-weight: bold;
+}
+
+.well-md {
+    min-height: 20px;
+    padding: 14px;
+    margin-bottom: 30px;
+    background-color: #234154 !important;
+    border: 1px solid #234154 !important;
+    margin-left: 25px;
+    border-radius: 0px !important;
+    background-image: linear-gradient(to bottom, #234154 0%, #234154 100%) !important;
+}
+
+.form-control {
+    display: block;
+    height: 40px !important;
+    padding: 7px 12px;
+    font-size: 16px !important;
+    line-height: 1.42857143 !important;
+    background-image: none;
+    border-radius: 0px !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075) !important;
+}
+
+.modal-content {
+    border-radius: 0px !important;
+}
+
+p {
+    color: #000 !important;
+}
+
+
+/* MODULES - Individual site components */
+
+
+/*  Panel CSS */
+
+.panel {
+    width: 95%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px !important;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px !important;
+    border-color: #234154 !important;
+}
+
+.panel-heading,
+.panel-title {
+    background: #234154 !important;
+    color: #e8491d !important;
+    font-size: 18px !important;
+    font-weight: 700;
+    border-radius: 0px;
+    padding-left: 30px;
+    height: 60px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px !important;
+}
+
+.panel-body {
+    background: #fff !important;
+    order-radius: 0px;
+    width: 100%;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px !important;
+    height: auto;
+    margin-bottom: 0px !important;
+}
+
+
+/*.. Thumbnail CSS ..*/
+
+.thumbnail {
+    background-color: #fff !important;
+    margin-left: 50px;
+    margin-right: 50px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px !important;
+    padding: 0px !important;
+    display: block;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+}
+
+.thumbnail h4 {
+    padding-left: 30px;
+    font-weight: bold;
+    color: #e8491d !important;
+}
+
+.thumbnail p {
+    padding-left: 30px;
+    font-weight: bold;
+}
+
+.thumbnail #btn {
+    float: right;
+}
+
+
+/* Layouts  - Pagelayout style*/
+
+
+/*Navbar */
+
+.navbar {
+    width: auto;
+    border-color: #2b5464;
+    height: 60px;
+    background: #2b5464 !important;
+    border-bottom: #e8491d 4px solid !important;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin: auto;
+}
+
+.navbar a {
+    font-weight: bold;
+    color: #eceff1 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+    padding-top: 20px !important;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #234154 !important;
+    color: #e8491d !important;
+}
+
+.navbar-collapse,
+.navbar-nav > .active > a,
+.navbar-nav > .active > a:hover {
+    background: #234154 !important;
+    color: #e8491d !important;
+}
+
+.navbar-brand h4 {
+    font-weight: bold;
+    font-size: 25px !important;
+    padding-left: 10px;
+    line-height: 1.1;
+    margin-top: -5px;
+}
+
+.highlights {
+    color: #e8491d !important;
+}
+
+.navbar-toggle {
+    background-color: #e8491d !important;
+}
+
+.navbar-toggle:hover {
+    background-color: #2B5464 !important;
+}
+
+.navbar-toggle {
+    border-color: #e8491d !important;
+}
+
+.icon-bar:hover {
+    background-color: #e8491d !important;
+}
+
+
+/* Hover Effect  */
+
+.grid {
+    position: relative;
+    clear: both;
+    margin: 0 auto;
+    /*	padding: 1em 0 4em;*/
+    max-width: auto;
+    list-style: none;
+    text-align: center;
+}
+
+
+/* Common style */
+
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 480px;
+    max-height: 360px;
+    width: 48%;
+    height: auto;
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.grid figure figcaption {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Anchor will cover the whole item by default */
+
+
+/* For some effects it will show as a button */
+
+.grid figure h4 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+    color: #234154!important;
+}
+
+.grid figure h4 span {
+    font-weight: 800;
+}
+
+.grid figure h4,
+.grid figure p {
+    margin: 0;
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+    color: #e8491d !important;
+}
+
+
+/*-----------------*/
+
+
+/***** Goliath *****/
+
+
+/*-----------------*/
+
+figure.my_effect {
+    background: #234154!important;
+}
+
+figure.my_effect img,
+figure.effect-goliath h4 {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+figure.my_effect img {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+figure.my_effect h4,
+figure.my_effect p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+}
+
+figure.my_effect p {
+    text-transform: none;
+    font-size: 90%;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+}
+
+figure.my_effect:hover img {
+    -webkit-transform: translate3d(0, -80px, 0);
+    transform: translate3d(0, -80px, 0);
+}
+
+figure.my_effect:hover h4 {
+    -webkit-transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, -100px, 0);
+}
+
+figure.my_effect:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}

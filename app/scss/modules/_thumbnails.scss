@@ -1,0 +1,29 @@
+/*.. Thumbnail CSS ..*/
+
+.thumbnail{
+  background-color: #fff !important;
+  margin-left: 50px;
+  margin-right: 50px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px !important;
+  padding: 0px !important;
+  display: block;
+  box-shadow: 0 1px 2px rgba(0, 0, .080, .075);
+
+  h4{
+    padding-left: 30px;
+    font-weight: bold;
+    color: #e8491d !important;
+  }
+  p{
+    padding-left: 30px;
+    font-weight: bold;
+
+
+  }
+  #btn{
+    float:right;
+
+  }
+}

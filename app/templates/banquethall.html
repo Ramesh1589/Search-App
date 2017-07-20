@@ -1,0 +1,35 @@
+<div class="col-md-9">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">Banquet Hall &nbsp;({{banquethall.length}})</div>
+        </div>
+        <div class="panel panel-body" ng-controller="banquethallCtrl">
+
+
+            <div dir-paginate="bh in banquethall | filter:search | itemsPerPage: 3">
+
+                <div class="thumbnail">
+                    <h4 ng-model="title">{{bh.title }}</h4>
+                    <p>
+                        <br>
+                    </p>
+                    <p><strong>Description:</strong>&nbsp;<small>{{ bh.description }}</small></p>
+                    <p><strong>Ph. No.:</strong>&nbsp;{{bh.phno }}</p>
+                    <p><strong>Address:</strong>&nbsp;{{ bh.address }}</p>
+                    <hr>
+                    <div class="clearfix">
+                        <button type="button" class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#info" ng-click="getDetails(bh)">View Details</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-md-8 col-lg-offset-4">
+                    <dir-pagination-controls max-size="3" direction-links="true" boundary-links="true"></dir-pagination-controls>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,178 @@
+{"realestate":[
+  {
+     "index": 0, 
+     "Propertyname":"Sun City",
+     "Builder ":"Mittal Builders",
+     "Description":"",
+     "image":"crib-2",
+     "Price": "5900/- per sqft. ",
+     "Type":"2 BHK ,1 BHK",
+     "Address":"Sinhagad Road, Pune"
+    
+  },
+  {
+    "index": 1, 
+     "Propertyname":"Sun Satellite",
+     "Builder ":"Rohan Builders",
+     "Description":"",
+     "image":"crib-2",
+     "Price": "5900/- per sqft. ",
+     "Type":"2 BHK ,1 BHK",
+     "Address":"Balewadi, Pune"
+    
+  },
+  {
+     "index": 2, 
+     "Propertyname":"Kakade City",
+     "Builder ":"kakade Builders",
+     "Description":"",
+     "image":"crib-2",
+     "Price": "5900/- per sqft. ",
+     "Type":"2 BHK ,1 BHK",
+     "ddress":"Karve Road, Pune"
+    
+  },
+  {
+    "index": 3, 
+     "Propertyname":"Rahul Park",
+     "Builder ":"Amit Enterprises",
+     "Description":"",
+     "image":"crib-2",
+     "Price": "5900/- per sqft. ",
+     "Type":"2 BHK ,1 BHK",
+     "Address":"Warje ,Pune - Banglore Highway, Pune"
+    
+  },
+  {
+     "index": 4, 
+     "Propertyname":"Nanded City",
+     "Builder ":"Nanded ",
+     "image":"crib-2",
+     "Price": "5900/- per sqft. ",
+     "Type":"2 BHK ,1 BHK",
+     "Address":"Sinhagad Road, Pune",
+    "Description":""
+  },
+  {
+    "index": 5, 
+     "Propertyname":"Sun Universe",
+     "Builder ":"Mittal Builders",
+     "Description":"",
+     "image":"crib-2",
+     "Price": "5900/- per sqft. ",
+     "Type":"2 BHK ,1 BHK",
+     "Address":"Navale Bridge, Pune"
+    
+  },
+  {
+     "index": 6, 
+     "Propertyname":"Garden City",
+     "Builder ":"Kumar Builders",
+     "Description":"",
+     "image":"crib-2",
+     "Price": "5900/- per sqft. ",
+     "Type":"2 BHK ,1 BHK",
+     "Address":"Warje, Pune"
+    
+  },
+  {
+    "index": 7, 
+     "Propertyname":"Silver Jubalee Park",
+     "Builder ":"Amit Enterprises",
+     "Description":"",
+     "image":"crib-2",
+     "Price": "5900/- per sqft. ",
+     "Type":"2 BHK ,1 BHK",
+     "Address":"Warje ,Pune - Banglore Highway, Pune"
+    
+  },
+  {
+     "index": 8, 
+     "Propertyname":"Sun City",
+     "Builder ":"Mittal Builders",
+     "Description":"",
+     "image":"crib-2",
+     "Price": "5900/- per sqft. ",
+     "Type":"2 BHK ,1 BHK",
+     "Address":"Sinhagad Road, Pune"
+    
+  },
+  {
+    "index": 9, 
+     "Propertyname":"Sun Satellite",
+     "Builder ":"Rohan Builders",
+          "image":"crib-2",
+     "Price": "5900/- per sqft. ",
+     "Type":"2 BHK ,1 BHK",
+     "Address":"Balewadi, Pune",
+    "Description":""
+  },
+  {
+     "index": 10, 
+     "Propertyname":"Kakade City",
+     "Builder":"kakade Builders",
+     "Description":"",
+     "image":"crib-2",
+     "Price": "5900/- per sqft. ",
+     "Type":"2 BHK ,1 BHK",
+     "Address":"Karve Road, Pune"
+    
+  },
+  {
+    "index": 11, 
+     "Propertyname":"Rahul Park",
+     "Builder":"Amit Enterprises",
+     "Description":"",
+     "image":"crib-2",
+     "Price": "5900/- per sqft. ",
+     "Type":"2 BHK ,1 BHK",
+     "Address":"Warje ,Pune - Banglore Highway, Pune"
+    
+  },
+  {
+     "index": 12, 
+     "Propertyname":"Nanded City",
+     "Builder":"Nanded ",
+     "Description":"",
+     "image":"crib-2",
+     "Price": "5900/- per sqft. ",
+     "Type":"2 BHK ,1 BHK",
+     "Address":"Sinhagad Road, Pune"
+    
+  },
+  {
+    "index": 13, 
+     "Propertyname":"Sun Universe",
+     "Builder":"Mittal Builders",
+     "Description":"",
+     "image":"crib-2",
+     "Price": "5900/- per sqft. ",
+     "Type":"2 BHK ,1 BHK",
+     "Address":"Navale Bridge, Pune"
+    
+  },
+  {
+     "index": 14, 
+     "Propertyname":"Garden City",
+     "Builder":"Kumar Builders",
+     "Description":"",
+     "image":"crib-2",
+     "Price": "5900/- per sqft. ",
+     "Type":"2 BHK ,1 BHK",
+     "Address":"Warje, Pune"
+    
+  },
+  {
+    "index": 15, 
+     "Propertyname":"Silver Jubalee Park",
+     "Builder ":"Amit Enterprises",
+     "Description":"",
+     "image":"crib-2",
+     "Price": "5900/- per sqft. ",
+     "Type":"2 BHK ,1 BHK",
+     "Address":"Warje ,Pune - Banglore Highway, Pune"
+    
+  }
+  
+]
+}

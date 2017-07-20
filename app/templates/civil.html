@@ -1,0 +1,30 @@
+<div class="col-md-9">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title"> Civil Jobs ({{civiljobs.length}})</div>
+        </div>
+        <div class="panel panel-body" ng-controller="civilCtrl">
+            <div dir-paginate="cv in civiljobs | filter:search | itemsPerPage: 3">
+                <div class="thumbnail">
+                    <h4 ng-model="title">{{ cv.title }}</h4>
+                    <p><strong>Designatiom:</strong>&nbsp;{{ cv.designation }}</p>
+                    <p><strong>Skills:</strong>&nbsp;{{ cv.skills }}</p>
+                    <p><strong>Salary:</strong>&nbsp;{{ cv.salary }}/-</p>
+                    <p><strong>Address:</strong>&nbsp;{{ cv.address }}</p>
+                    <hr>
+                    <div class="clearfix">
+                        <button type="button" class="btn btn-info  btn-xs pull-right" data-toggle="modal" data-target="#info" ng-click="getDetails(cv)" style="margin-bottom: 20px ">More Info and Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-md-8 col-lg-offset-4">
+                    <dir-pagination-controls max-size="3" direction-links="true" boundary-links="true"></dir-pagination-controls>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="col-md-9">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">Restaurant & Bar ({{restaurant_bar.lenght}})</div>
+        </div>
+        <div class="panel panel-body" ng-controller="restaurant_barCtrl">
+
+
+            <div ng-repeat="rb in restaurant_bar|filter:search|limitTo:rbCount">
+
+                <div class="thumbnail">
+                    <h4 ng-model="title">{{ rb.title }}</h4>
+
+                    <button type="button" class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#info" ng-click="getDetails(rb)" style="margin-bottom: 20px ">View Details</button>
+
+                </div>
+
+            </div>
+            <div class="row">
+                <th>
+                    <button ng-click="showMore()" class="btn btn-warning" style="text-align: center;">Show More</button>
+                </th>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

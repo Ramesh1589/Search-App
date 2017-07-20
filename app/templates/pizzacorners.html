@@ -1,0 +1,37 @@
+<div class="col-md-9">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <div class="panel-title">Pizza Corner's&nbsp;({{pizzacorners.length}})</div>
+        </div>
+        <div class="panel panel-body" ng-controller="pizzacornersCtrl">
+
+
+            <div dir-paginate="pz in pizzacorners | filter:search | itemsPerPage: 3">
+
+                <div class="thumbnail">
+                    <h4 ng-model="title">{{ pz.title }}</h4>
+                    <p>
+                        <br>
+                    </p>
+                    <p><strong>Description:</strong><small>&nbsp;{{ pz.description }}</small></p>
+                    <p><strong>Address:</strong>&nbsp;{{ pz.address }}</p>
+                    <p><strong>Ph. no:</strong>&nbsp;{{ pz.phno }}</p>
+                    <p><strong>websites:</strong>&nbsp;{{ pz.website }}</p>
+                    <hr>
+                    <div class="clearfix">
+                        <button type="button" class="btn btn-info btn-xs pull-right" data-toggle="modal" data-target="#info" ng-click="getDetails(pz)">View Details</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="panel-footer">
+            <div class="row">
+                <div class="col-md-8 col-lg-offset-4">
+                    <dir-pagination-controls max-size="3" direction-links="true" boundary-links="true"></dir-pagination-controls>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,108 @@
+<p>
+    <br>
+</p>
+<p>
+    <br>
+</p>
+<p>
+    <br>
+</p>
+<div class="container">
+    <div class="row">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">MOVIES SHOW TIME OF AKOLA CITY </h3> </div>
+            <div class="panel-body">
+                <div class="col-md-10" ng-init="getMovies()" dir-paginate="mov in movie|filter:search | itemsPerPage: 3">
+                    <div class="col-md-4">
+                        <div class="thumbnail"> <img src="app/images/movie/{{mov.image}}.jpg" width="300px" hieght="450px" class="image-responsive "> </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h4 ng-model="title">Title:&nbsp;&nbsp;{{ mov.title }}</h4>
+                        <p><strong>Cast :</strong>&nbsp;&nbsp;{{mov.cast}}</p>
+                        <p><strong>Genre :</strong>&nbsp;&nbsp;{{mov.genre }}</p>
+                        <p><strong>Director :</strong>&nbsp;&nbsp;{{mov.director}}</p>
+                        <p><strong>Rating :</strong>&nbsp;&nbsp;</p>
+                    </div>
+                    <div class="clearfix">
+                        <button type="button" class="btn btn-primary btn-md disabled" style="margin-top:40px">Post Review</button>
+                        <button type="button" class="btn btn-danger btn-danger" style="margin-top:40px" ng-click="getDetails(mov)" data-toggle="modal" data-target="#myModal">See Show Time</button>
+                    </div>
+                    <hr> </div>
+            </div>
+            <div class="panel-footer">
+                <div class="row">
+                    <div class="col-md-4 col-lg-offset-4">
+                        <dir-pagination-controls max-size="3" direction-links="true" boundary-links="true"></dir-pagination-controls>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add movie modal -->
+   
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">SHOW TIME</h4> </div>
+                <div class="modal-body">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">&nbsp;&nbsp;{{detail.title }}</div>
+                        <div class="panel-body">
+                            <div class="col-md-10">
+                                <div class="col-md-4"> <img ng-src="app/images/movie/{{detail.image}}.jpg" width="100px" hieght="200px" class=" image-responsive "> </div>
+                                <div class="col-md-6">
+                                    <p><strong>Genre :</strong>&nbsp;&nbsp;{{detail.genre }}</p>
+                                    <p><strong>Director :</strong>&nbsp;&nbsp;{{detail.director}}</p>
+                                    <p><strong>Rating :</strong>&nbsp;&nbsp;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading"> <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" id="accordion" style="color: #e8491d !important;">SHOW TIME</a></div>
+                        <div id="collapse1" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <h5>E Orbit Multiplex</h5>
+                                        <br>
+                                        <button type="button" class="btn btn-warning btn-md">12.30 PM</button>
+                                        <button type="button" class="btn btn-warning btn-md">6.30 PM</button>
+                                        <button type="button" class="btn btn-warning btn-md">9.30 PM</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <h5>Prabhat Cinema Hall</h5>
+                                        <br>
+                                        <button type="button" class="btn btn-warning btn-md">12.30 PM</button>
+                                        <button type="button" class="btn btn-warning btn-md">6.30 PM</button>
+                                        <button type="button" class="btn btn-warning btn-md">9.30 PM</button>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <h5>Big Cinema Rajesh</h5>
+                                        <br>
+                                        <button type="button" class="btn btn-warning btn-md">12.30 PM</button>
+                                        <button type="button" class="btn btn-warning btn-md">6.30 PM</button>
+                                        <button type="button" class="btn btn-warning btn-md">9.30 PM</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
